@@ -11,7 +11,6 @@ public class Algorithms {
             i++;
         }
     }
-
     //Bubble sort is replaced by quick sort!!!
     //The generic method for sorting an array: sort (bubble sort)
     public static <T extends Comparable<T>> void sort(T [] array) {
@@ -39,7 +38,6 @@ public class Algorithms {
             quickSortHoare(array, pivotIndex + 1, end);
         }
     }
-
     private static <E extends Comparable<E>> int hoarePartition(E[] array, int begin, int end) {
         E pivot = array[begin];
         int i = begin - 1;
@@ -59,14 +57,12 @@ public class Algorithms {
             swap(array, i, j);
         }
     }
-
     //The generic method used to swap two elements of an array: swap
     public static <T> void swap(T[] array,int i,int j){
         T temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
-
     public static <T extends Comparable<T>> int binarySearch(T aValue, T [] fromArray, int fromIndex, int toIndex) {
         if (fromIndex > toIndex) {
             return -1;

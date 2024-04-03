@@ -79,6 +79,7 @@ public class HashTableBookImplementation implements Book{
                     // Reset the counter for the next word read.
                     currentIndex = 0;
                     addToWords(word);
+
                 }
             }
         }

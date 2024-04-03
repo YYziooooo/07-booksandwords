@@ -8,6 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
 public class BSTBookImplementation implements Book {
+
     private static final int MAX_WORDS = 100000;
     private static final int MAX_WORD_LEN = 100;
     KeyValueBSearchTree<String, Integer> words = null;

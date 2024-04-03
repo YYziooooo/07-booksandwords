@@ -35,6 +35,7 @@ public class Pair<K extends Comparable<K>, V extends Comparable<V>> implements C
     @Override
     public int compareTo(Pair<K, V> o) {
         return value.compareTo(o.value);
+
     }
 
     @Override
